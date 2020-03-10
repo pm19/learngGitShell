@@ -15,3 +15,7 @@ git commit -m "本次提交的说明"
 git status
 8.查看具体修改了什么内容
 git diff
+9.显示从最近到最远的提交日志
+git log
+10.提交日志时间线
+git log --pretty=oneline
