@@ -27,3 +27,9 @@ git reflog
 git reset --hard commit_id(如4b468)
 14.查看工作区和版本库里面最新版本的区别
 git diff HEAD -- readme.txt
+15.撤销工作区的修改
+git checkout -- 文件名（如readme.txt）
+16.已添加到暂存区，还未提交，撤销修改
+git reset HEAD 文件名     git checkout -- 文件名（如readme.txt）    
+17.版本库里删除某文件
+git rm 文件名
