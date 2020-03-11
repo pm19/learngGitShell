@@ -33,3 +33,5 @@ git checkout -- 文件名（如readme.txt）
 git reset HEAD 文件名     git checkout -- 文件名（如readme.txt）    
 17.版本库里删除某文件
 git rm 文件名
+18.远程仓库 创建SSH Key， 登陆GitHub，打开“Account settings”，“SSH Keys”页面：然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
+ssh-keygen -t rsa -C "邮箱地址"
