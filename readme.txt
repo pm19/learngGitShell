@@ -35,3 +35,22 @@ git reset HEAD 文件名     git checkout -- 文件名（如readme.txt）
 git rm 文件名
 18.远程仓库 创建SSH Key， 登陆GitHub，打开“Account settings”，“SSH Keys”页面：然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容
 ssh-keygen -t rsa -C "邮箱地址"
+19.已有的本地仓库关联一个远程库，然后，把本地仓库的内容推送到GitHub仓库
+git remote add origin git地址（如git@github.com:aaaa/bbb.git）
+20.关联后，第一次推送master分支的所有内容
+git push -u origin master
+21.每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改
+22.远程库克隆到本地库
+git clone git地址
+23.创建dev分支+切换到dev分支
+git checkout -b dev 或者 git switch -c dev
+24查看当前分支
+git branch
+25.合并指定分支到当前分支
+git merge dev
+26.删除分支
+git branch -d dev
+27创建dev分支
+git branch 分支名
+28.切换分支
+git checkout dev 或者git switch dev
